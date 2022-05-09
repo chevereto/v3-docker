@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) exif gd pdo_mysql zip opcache \
     && pecl install imagick \
     && docker-php-ext-enable imagick opcache \
-    && php -m 
+    && php -m
 
 RUN apt-get install -y \
     rsync \
@@ -71,7 +71,8 @@ ENV CHEVERETO_SOFTWARE=$CHEVERETO_SOFTWARE \
     CHEVERETO_ASSET_STORAGE_SERVER= \
     CHEVERETO_ASSET_STORAGE_SERVICE= \
     CHEVERETO_ASSET_STORAGE_ACCOUNT_ID= \
-    CHEVERETO_ASSET_STORAGE_ACCOUNT_NAME= 
+    CHEVERETO_ASSET_STORAGE_ACCOUNT_NAME= \
+    CHEVERETO_USER_ALBUMS_LIST_LIMIT=
 
 COPY vhost.conf /etc/apache2/sites-available/000-default.conf
 
