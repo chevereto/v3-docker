@@ -2,8 +2,7 @@
 
 ## Quick start
 
-* Clone [chevereto/docker](https://github.com/chevereto/docker)
-  * Use `3.20` branch `git switch 3.20`
+* Clone [chevereto/v3-docker](https://github.com/chevereto/v3-docker)
 * Clone [chevereto/v3](https://github.com/chevereto/v3)
   * Your clone path will be your `SOURCE`
 * Run [docker-compose up](#up)
