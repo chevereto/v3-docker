@@ -50,7 +50,7 @@ dev--up
 Take the containers down (stop).
 
 ```sh
-dev--down--volumes
+dev--down
 ```
 
 ### Dev down volumes
